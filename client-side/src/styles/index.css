@@ -1,4 +1,5 @@
 /* ./src/index.css */
+/* //This is a CSS reset. Nukes all the styles by default in the browser */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

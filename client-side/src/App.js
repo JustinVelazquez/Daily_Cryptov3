@@ -4,7 +4,7 @@ function App() {
   return (
     <div>
       <ul class="flex-row">
-        <li class="text-gray-500 flex-auto">
+        <li class="text-blue-500 flex-auto">
           Hello World. This is Going to be crypto daily!
         </li>
         <li class="text-yellow-500 flex-auto">
