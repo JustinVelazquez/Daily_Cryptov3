@@ -15,3 +15,10 @@ a) This will query its own API(coingecko)
 b) Will loop through the top 20 currencies by MarketCap, and show statistics
 c) Will have 2 filtering options (24h/7D)
 d) takes up our right side of application. Static
+
+[]Setup Redux?
+a) Do we need a state management tool? - Yes. The state of our components are dependent on entirely separate components. These are not directly child/parents
+b) Setup Redux
+
+[]Setup React-router-Dom?
+a) Do we need react router?
