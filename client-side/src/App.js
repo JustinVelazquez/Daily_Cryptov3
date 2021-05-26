@@ -1,16 +1,19 @@
 import logo from './logo.svg';
 
+function TallComponent() {
+  return Array.from({ length: 1000 }, (_, i) => (
+    <div className="h-16">{i}</div>
+  ));
+}
+
 function App() {
   return (
-    <div>
-      <ul class="flex-row">
-        <li class="text-blue-500 flex-auto">
-          Hello World. This is Going to be crypto daily!
-        </li>
-        <li class="text-yellow-500 flex-auto">
-          Hello World. This is Going to be crypto daily!
-        </li>
-      </ul>
+    <div className="flex min-h-screen ">
+      <div className="w-1/4 p-2 px-2 py-4 sticky top-0 h-full">Left</div>
+      <div className="flex-1">
+        <TallComponent />
+      </div>
+      <div className="w-1/4 sticky top-0 h-full">Right</div>
     </div>
   );
 }
