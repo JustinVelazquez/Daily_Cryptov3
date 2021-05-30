@@ -7,6 +7,8 @@
 
 import axios from 'axios';
 
-const url = `https://cryptopanic.com/api/v1/posts/?${process.env.CP_AUTH_TOKEN}=50a9543a3c7f6308fac40d7afcb8697186dea39d&public=true`;
+const url = `https://cryptopanic.com/api/v1/posts/?auth_token=${process.env.CP_AUTH_TOKEN}&public=true`;
+
+const url = `https://cryptopanic.com/api/v1/posts/?auth_token=${process.env.CP_AUTH_TOKEN}&public=true`;
 
 const fetchPosts = () => axios.get(url);
