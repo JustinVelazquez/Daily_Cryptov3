@@ -1,9 +1,11 @@
 import React from 'react';
 
-const post = ({ post }) => {
+const Post = ({ post }) => {
   return (
-      <h1> </h1>
-  )
+    <>
+      <h1>{post.title} </h1> <span>{post.source.domain}</span>
+    </>
+  );
 };
 
-export default post;
+export default Post;

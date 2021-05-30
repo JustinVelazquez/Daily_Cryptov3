@@ -7,8 +7,7 @@
 
 import axios from 'axios';
 
-const url = `https://cryptopanic.com/api/v1/posts/?auth_token=${process.env.CP_AUTH_TOKEN}&public=true`;
+const proxy = 'https://cors-anywhere.herokuapp.com/';
+const url = `${proxy}https://cryptopanic.com/api/v1/posts/?auth_token=${process.env.CP_AUTH_TOKEN}&public=true`;
 
-const url = `https://cryptopanic.com/api/v1/posts/?auth_token=${process.env.CP_AUTH_TOKEN}&public=true`;
-
-const fetchPosts = () => axios.get(url);
+export const fetchPosts = () => axios.get(url);

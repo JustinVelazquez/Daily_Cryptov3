@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Posts from './posts/Posts';
 
-function Content () {
-    return (
-        <div>
-            
-        </div>
-    )
+function Content() {
+  return (
+    <div>
+      <Posts />
+    </div>
+  );
 }
 
-export default Content
+export default Content;
