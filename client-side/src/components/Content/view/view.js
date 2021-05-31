@@ -1,6 +1,6 @@
 import React from 'react';
 
-const view = () => {
+const View = () => {
   return (
     <div>
       <h1>This will be the view</h1>
@@ -8,4 +8,4 @@ const view = () => {
   );
 };
 
-export default view;
+export default View;

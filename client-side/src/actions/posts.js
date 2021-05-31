@@ -10,3 +10,12 @@ export const getPosts = () => async (dispatch) => {
     console.log(err);
   }
 };
+
+export const getMedia = () => async (dispatch) => {
+  try {
+    const { data } = await cpApi.fetchMedia();
+    dispatch({ type: 'FETCH_MEDIA', payload: data });
+  } catch (err) {
+    console.log(err);
+  }
+};

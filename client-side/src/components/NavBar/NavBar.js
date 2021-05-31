@@ -1,13 +1,15 @@
 import React from 'react';
 import NavItem from './NavItem/NavItem';
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   return (
     <div className="flex flex-col">
-      <NavItem icon={'TODO'} label="News" />
-      <NavItem icon={'TODO'} label="Media" />
-      <NavItem icon={'TODO'} label="Favorites" />
-      <NavItem icon={'TODO'} label="Login" />
+      <Link><NavItem icon={'TODO'} label="News" /></Link>
+      
+      <Link><NavItem icon={'TODO'} label="Media" /></Link>
+      <Link><NavItem icon={'TODO'} label="Favorites" /></Link>
+      <Link> <NavItem icon={'TODO'} label="Login" /> </Link>
     </div>
   );
 };
