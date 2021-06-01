@@ -4,10 +4,13 @@ import NavBar from './components/NavBar/NavBar';
 import PriceTicker from './components/price-ticker/priceTicker';
 import { useDispatch } from 'react-redux';
 import { getPosts } from './actions/posts';
+import { getMedia } from './actions/media'
 import { getCoins } from './actions/prices';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Content from './components/Content/Content';
+
+import Posts from './components/Content/posts/Posts'
+import Media from './components/Content/Media/Media'
 
 // function TallComponent() {
 //   return Array.from({ length: 1000 }, (_, i) => (
@@ -26,6 +29,8 @@ function App() {
     dispatch(getCoins());
   }, [dispatch])
 
+
+
  
   return (
     <Router>
@@ -35,8 +40,8 @@ function App() {
             <NavBar />
           </div>
           <div className="flex-1">
-            {/* <TallComponent /> */}
-            <Content />
+           <Posts />
+           {/* <Media /> */}
           </div>
           <div className="w-1/12 sticky top-0 h-full">
             <PriceTicker />

@@ -9,7 +9,7 @@ function Posts() {
   console.log(posts)
 
   return (
-    <div>
+    <div className="flex flex-col justify-center">
       {posts.results.map((post) => (
         <Post key={post.id} post={post} />
       ))}
