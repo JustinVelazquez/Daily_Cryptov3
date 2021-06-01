@@ -10,9 +10,9 @@ function Posts() {
 
   return (
     <div>
-      {/* {posts.results.map((post) => (
+      {posts.results.map((post) => (
         <Post key={post.id} post={post} />
-      ))} */}
+      ))}
     </div>
   
   )

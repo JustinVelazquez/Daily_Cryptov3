@@ -1,14 +1,29 @@
 import React from 'react';
 import NavItem from './NavItem/NavItem';
-import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { getPosts, getMedia } from '../../actions/posts';
 
 const NavBar = () => {
+  const dispatch = useDispatch();
+
+  const handlePosts = () => dispatch(getPosts())
+  const handleMedia = () => dispatch(getMedia())
+
   return (
     <div className="flex flex-col">
-      <Link><NavItem icon={'TODO'} label="News" /></Link>
-      <Link><NavItem icon={'TODO'} label="Media" /></Link>
-      <Link><NavItem icon={'TODO'} label="Favorites" /></Link>
-      <Link> <NavItem icon={'TODO'} label="Login" /> </Link>
+      <NavItem
+        onClick={handlePosts}
+        icon={'TODO'}
+        label="News"
+      />
+      <NavItem
+        onClick={handleMedia}
+        icon={'TODO'}
+        label="Media"
+      />
+      <NavItem icon={'TODO'} label="Favorites" />
+      <NavItem icon={'TODO'} label="Login" />
     </div>
   );
 };

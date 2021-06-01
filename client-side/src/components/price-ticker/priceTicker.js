@@ -11,8 +11,6 @@ function PriceTicker() {
 
   return (
     <div>
-     
-      
       {coinList.map((coin) => (
         <Ticker key={coin.id} coin={coin} />
       ))} 
