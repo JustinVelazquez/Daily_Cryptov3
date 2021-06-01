@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import React, { useEffect } from 'react';
 import NavBar from './components/NavBar/NavBar';
+import PriceTicker from './components/price-ticker/priceTicker';
 import { useDispatch } from 'react-redux';
 import { getPosts } from './actions/posts';
-import { getPing } from './actions/prices';
+import { getCoins } from './actions/prices';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Content from './components/Content/Content';
@@ -16,15 +17,16 @@ import Content from './components/Content/Content';
 
 function App() {
   const dispatch = useDispatch();
-
+ 
   useEffect(() => {
-    dispatch(getPosts());
+    dispatch(getPosts())
   }, [dispatch]);
 
   useEffect(() => {
-    dispatch(getPing());
-  }, [dispatch]);
+    dispatch(getCoins());
+  }, [dispatch])
 
+ 
   return (
     <Router>
       <Switch>
@@ -36,7 +38,9 @@ function App() {
             {/* <TallComponent /> */}
             <Content />
           </div>
-          <div className="w-1/12 sticky top-0 h-full">Right</div>
+          <div className="w-1/12 sticky top-0 h-full">
+            <PriceTicker />
+          </div>
         </div>
       </Switch>
     </Router>

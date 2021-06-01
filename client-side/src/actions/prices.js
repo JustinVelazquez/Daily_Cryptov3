@@ -1,11 +1,11 @@
-import * as cgApi from '../api/coinGecko'
+import * as cgApi from '../api/coinGecko';
 
 //Action Creators
-export const getPing = () => async (dispatch) => {
+export const getCoins = () => async (dispatch) => {
   try {
-    const { data } = await cgApi.fetchPing();
+    const { data } = await cgApi.fetchCoins();
 
-    dispatch({ type: 'FETCH_ALL', payload: data });
+    dispatch({ type: 'FETCH_COINS', payload: data });
   } catch (err) {
     console.log(err);
   }

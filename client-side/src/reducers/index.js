@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 import postReducer from './posts';
-import priceReducer from './price'
+import coinReducer from './price';
 
 export default combineReducers({
   posts: postReducer,
-  price: priceReducer
+  coins: coinReducer,
 });

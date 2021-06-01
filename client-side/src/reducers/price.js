@@ -1,11 +1,10 @@
-const priceReducer = (posts = [], action) => {
-    switch (action.type) {
-      case 'FETCH_ALL':
-        return action.payload;
-      default:
-        return posts;
-    }
-  };
-  
-  export default priceReducer;
-  
+const coinReducer = (coins = [], action) => {
+  switch (action.type) {
+    case 'FETCH_COINS':
+      return action.payload;
+    default:
+      return coins;
+  }
+};
+
+export default coinReducer;

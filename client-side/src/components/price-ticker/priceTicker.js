@@ -1,12 +1,21 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect, useState } from 'react';
+import { useSelector} from 'react-redux';
+import Ticker from './ticker/Ticker';
+import { getCoins } from '../../actions/prices';
 
 function PriceTicker() {
-  const price = useSelector((state) => state.price);
-  console.log(price);
+  
+  const coinList = useSelector((state) => state.coins);
+  console.log(coinList)
+  
+
   return (
     <div>
-      <h1>Price Ticker</h1>
+     
+      
+      {coinList.map((coin) => (
+        <Ticker key={coin.id} coin={coin} />
+      ))} 
     </div>
   );
 }
