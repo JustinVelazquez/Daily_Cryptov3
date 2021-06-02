@@ -17,6 +17,6 @@
   },
   "scripts": {
     "start": "yarn start",
-    "dev": "nodemon index.js"
+    "dev": "node index.js"
   }
 }
