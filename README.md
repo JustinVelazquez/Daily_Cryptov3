@@ -1,6 +1,6 @@
 # Crypto Daily
 
-A One Stop Shop for your all your news, videos and all your favorite cryptocurrencies
+A One Stop Shop for your all your news, videos and all your favorite cryptocurrencies.
 
 Live Site Coming Soon:
 
