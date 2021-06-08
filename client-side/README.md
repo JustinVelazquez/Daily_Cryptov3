@@ -11,6 +11,6 @@
 # ToDo
 
 []Enable dispatched from our Router
-[]Re-access the use of React-Router
+[] React-Router
 []Setup Auth Routes Backend
 []Connect our frontend and backend APIs
