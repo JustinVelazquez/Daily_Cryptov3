@@ -4,9 +4,7 @@ import { getPosts } from '../../../actions/posts';
 import Post from './post/post';
 
 function Posts() {
-
   const posts = useSelector((state) => state.posts);
-  console.log(posts)
 
   return (
     <div className="flex flex-col justify-center">
@@ -14,12 +12,7 @@ function Posts() {
         <Post key={post.id} post={post} />
       ))}
     </div>
-  
-  )
+  );
 }
 
 export default Posts;
-
-
-
-
