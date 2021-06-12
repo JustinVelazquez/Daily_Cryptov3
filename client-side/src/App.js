@@ -16,7 +16,6 @@ import Media from './components/Content/Media/Media';
 //     <div className="h-16">{i}</div>
 //   ));
 // }
-// this is a comment to get a  commit  push... i can barely type
 
 function App() {
   const dispatch = useDispatch();
